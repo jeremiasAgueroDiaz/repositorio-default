@@ -8,11 +8,11 @@ const port = 2500;
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.set("view engine", "ejs");
-app.set("views", path.join(__dirname, "views"));
+app.set("vista", path.join(__dirname, "views"));
 app.use(express.static(path.join(__dirname, "public")));
 
-app.get("/verduleria", (req, res) => {
-    res.render("index", { productos: productos, largo: largo });
+app.get("/libreria", (req, res) => {
+    res.render("index");
     //res.render("pruebas", { p : p});
 });
 
