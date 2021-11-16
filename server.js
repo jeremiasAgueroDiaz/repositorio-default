@@ -11,7 +11,7 @@ app.set("view engine", "ejs");
 app.set("vista", path.join(__dirname, "views"));
 app.use(express.static(path.join(__dirname, "public")));
 
-app.get("/libreria", (req, res) => {
+app.get("/paginita", (req, res) => {
     res.render("index");
     //res.render("pruebas", { p : p});
 });
